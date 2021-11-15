@@ -13,7 +13,7 @@ while counter < len(numbers_list) - 1:
     # если встечает соседа больше, считаем его (counts_neighbors +=1
     if numbers_list[counter-1] < numbers_list[counter] > numbers_list[counter+1]:
         counts_neighbors += 1
-        counter +=2    # счетчик индекса увеличиваем (counter += 2)
+        counter += 1    # счетчик индекса увеличиваем (counter += 1)
     else:              # если не больше, идет проверять дальше (counter += 1)
         counter += 1
 print("Больших соседей: ", counts_neighbors, end=' ')
